@@ -1,0 +1,5 @@
+[
+  {"id":"R3A","start":[["position",">",2500],["zone_speed","<",10]],"duration":180,"end_m":4500,"target":["position",-0.017,79,4.5,23],"drop":0.55,"release":[]},
+  {"id":"R3B","start":[["position",">",2500],["zone_speed","<",17]],"duration":160,"end_m":4500,"target":["position",-0.016,77,6,23],"drop":0.55,"release":[]},
+  {"id":"R3C","start":[["position",">",1800],["zone_speed","<",19]],"duration":230,"end_m":4500,"target":["position",-0.012,56,5.5,21],"drop":0.45,"release":[["position",">",4250],["entry_rate",">",0.2],["leader",">",9]]}
+]
