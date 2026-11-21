@@ -1,0 +1,5 @@
+[
+  {"id":"R2A","start":[["position",">",2500],["zone_speed","<",10]],"duration":90,"end_m":4450,"target":["zone_speed",0.35,13,13,19],"drop":0.55,"release":[]},
+  {"id":"R2B","start":[["ahead","<",20]],"duration":100,"end_m":4480,"target":["gap",0.025,12,12,21],"drop":0.65,"release":[]},
+  {"id":"R2C","start":[["position",">",2500],["zone_speed","<",10]],"duration":160,"end_m":4500,"target":["position",-0.016,77,6,23],"drop":0.55,"release":[]}
+]
