@@ -1,0 +1,116 @@
+{
+  "contract": {
+    "weights": {
+      "total_travel_s": 0.5,
+      "follower_variation_per_km": 0.3,
+      "low_speed_vehicle_s": 0.1,
+      "last_exit_s": 0.1
+    },
+    "minimum_sampled_gap_m": 2.0,
+    "experiment": 4,
+    "cohort": 60,
+    "control_id": 30,
+    "follower_ids": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "dt_s": 0.1,
+    "horizon_s": 1200,
+    "teacher_commit": "9a324d9ce9671a11184c4e8f1f9555fb0d8ea2c1",
+    "validation_seeds": [
+      11,
+      12
+    ],
+    "test_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "source_sha256_lf": {
+      "stage4_freeze.py": "9d9d69f8e2938ec839b935c88f58925a0413fc6323f3d4bb1df95ec475f9593d",
+      "stage1_single_vehicle.py": "d6eeba74696ab623fa8aea874458208e7a049fbfaf0a72d60decdf7a72e28428",
+      "stage3_policy.py": "fa536535445cdfcee78095a9219326d3d28ae3530ae73f01f100b9964f6e9b79",
+      "stage3_search.py": "5c47187c46fe865aa65ce829187f4db30ca34fd7ef87abd3c881f3d3bcd418b8",
+      "evaluate.py": "e44478208de366f1a7f075ec8ad32b315a12d8a867386496351c5da888d06c3e",
+      "bootstrap.py": "c1b8a2b299e4587007218f44f594fcb706499ee9c597b3efc335f51b3dbfff69",
+      "requirements.txt": "af9c9ea6a882ecdb9816a50416e4e777ff38447e9caf3b8e4c630ce2f227d324",
+      "teacher-source/config.py": "9472b0379fca84fbf9d1ca8172649ae22366abc98ee63415a1d5a87c77d6c385",
+      "teacher-source/vehicle_idm.py": "a56ec0af732a029b09f5af79866164b7154479d3ee033e9a59a1fd6e631a70f4",
+      "teacher-source/vehicle.py": "a6fdbcf39fd0aa5ef70fae6b90cb746d9c6cce4eace9e0ed37810a7850adc963",
+      "experiments/stage3/shortlist.json": "cf5dc2a9a2732289752edfb09d98d5c4d0aa967be397e4f7481e80fd988928c4",
+      "experiments/stage4/protocol.md": "c1143e186c0cc30d6070fd24f7a30a8d104c59d17c22764a50d930183a0020e0"
+    }
+  },
+  "validation_summary_digest": "340c5a48300702a9c2fb0a6df6586a92b7ddb3db42e21fa22473a4064c6a2179",
+  "selection": "Eligible on both validation seeds, highest unrounded mean reward, then ascending ID",
+  "selected": {
+    "llm": {
+      "rule": {
+        "id": "R3B",
+        "start": [
+          [
+            "position",
+            ">",
+            2500
+          ],
+          [
+            "zone_speed",
+            "<",
+            17
+          ]
+        ],
+        "duration": 160,
+        "end_m": 4500,
+        "target": [
+          "position",
+          -0.016,
+          77,
+          6,
+          23
+        ],
+        "drop": 0.55,
+        "release": []
+      },
+      "sha256_canonical_json": "174eeb1420e27c70ea11ed48d9374a31798f1c1a3a36d69610aa8a3db238f7bd",
+      "validation_mean_reward": 1.4319508808976438
+    },
+    "fixed_grid": {
+      "rule": {
+        "id": "H20_100",
+        "start": [
+          [
+            "ahead",
+            "<",
+            20
+          ]
+        ],
+        "duration": 100,
+        "end_m": 4500,
+        "target": [
+          "ego",
+          0,
+          20,
+          20,
+          20
+        ],
+        "drop": 30,
+        "release": []
+      },
+      "sha256_canonical_json": "d768e69f546c79b497b82c6a85dec1448639d26c5740ebc311d5c9b15bc3c0a7",
+      "validation_mean_reward": 0.5771196194676607
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "split": "validation",
+  "seeds": [
+    11,
+    12
+  ],
+  "binding": "f260f4314eb59d040645cf1463aade62664d40c8abe723243d7470a1f7361fff",
+  "summary": [
+    {
+      "id": "R3B",
+      "eligible_seeds": 2,
+      "mean_reward": 1.4319508808976438,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 2.3966129045960165,
+        "low_speed_vehicle_s": 7.129670095188388,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.695585159309303
+    },
+    {
+      "id": "R2C",
+      "eligible_seeds": 2,
+      "mean_reward": 1.1061787917303816,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 2.443151235524878,
+        "low_speed_vehicle_s": 3.732334210729184,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.6683533948698823
+    },
+    {
+      "id": "H20_100",
+      "eligible_seeds": 2,
+      "mean_reward": 0.5771196194676607,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 1.7081835139847388,
+        "low_speed_vehicle_s": 0.64664565272239,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.4779714139031057
+    },
+    {
+      "id": "H20_65",
+      "eligible_seeds": 2,
+      "mean_reward": 0.5771168859099343,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 1.7081744021256506,
+        "low_speed_vehicle_s": 0.64664565272239,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.4779714139031057
+    }
+  ]
+}
