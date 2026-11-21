@@ -4,7 +4,33 @@ Coursework Part II experiment records for an exploratory combination of single-v
 
 **Current status.** Phase 4 selected R3B and H20_100 on validation and froze both rules before opening six held-out experiment 4 traffic sequences. R3B reduced follower speed variation by 2.67% and whole-cohort low-speed time by 7.18% on average. All 360 individual exit timestamps matched the paired all-IDM baseline. [Frozen test results and evidence](experiments/stage4/README.md) · [Development search](experiments/stage3/README.md)
 
-## Reproduce
+## Reproduce the reported test results
+
+Use Git and **CPython 3.12.3**. The frozen runner checks the exact Python and NumPy versions. Run the following in PowerShell with `python` pointing to 3.12.3. Internet access is needed for the initial downloads. The archived rules run locally without an LLM account or API key.
+
+```powershell
+git clone https://github.com/4566nb/llm-traffic-control-coursework.git
+cd llm-traffic-control-coursework
+python --version
+python -m venv .venv
+$py = (Resolve-Path .venv/Scripts/python.exe).Path
+& $py -m pip install -r requirements.txt
+& $py bootstrap.py
+& $py stage4_report.py
+```
+
+This checks the saved per-vehicle exit times and redraws the paired-effects and seed-101 figures under `experiments/stage4/`. To **rerun the six simulations** from the rules fixed before the test, continue in the same shell. The separate worktree begins with the validation and freeze files and no test records. Every seed runs an IDM reference, a trajectory-equivalence check and the two selected policies.
+
+```powershell
+git worktree add --detach ../traffic-frozen 6432d52
+cd ../traffic-frozen
+& $py bootstrap.py
+& $py stage4_freeze.py test
+```
+
+On macOS/Linux, set `py="$(pwd)/.venv/bin/python"` after creating the environment and use `"$py"` in place of `& $py`. Compare the regenerated `experiments/stage4/test/summary.json` with the [archived result](experiments/stage4/test/summary.json). All six seeds should be eligible for each rule. Mean rewards are 1.519111 for R3B and 0.623130 for H20_100. For R3B, mean relative reductions in follower variation and low-speed exposure are 2.6715% and 7.1766%. Total trip time and last exit show zero change in every pair. An existing test folder is a cache, so use a fresh worktree for an independent run.
+
+## Reproduce the earlier baseline
 
 Python 3.12 and Git are required. The course simulator is fetched separately at the original pinned revision; it is not included in this repository.
 
