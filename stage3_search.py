@@ -27,6 +27,8 @@ def save_json(path, data):
 
 def attach_diagnostics(vehicles, decisions):
     """Align each action with the worst realised acceleration before the next decision."""
+    if not decisions:
+        return {"active_s_samples": 0, "strongest_brake_window": [], "release": None}
     history = vehicles[CONTROLLED - 1].history
     for row in decisions:
         index = round((row["t"] - history[0]["t"]) / DT)
@@ -68,12 +70,14 @@ def evaluate_seed(work):
                     if rule["id"] == "H20_30" and values != prior["candidate"]:
                         raise ValueError("Fixed-rule control must match phase 2 exactly")
                     diag = attach_diagnostics(vehicles, decisions)
-                    if writer is None:
+                    if writer is None and decisions:
                         writer = csv.DictWriter(stream, fieldnames=["rule", *decisions[0].keys()])
                         writer.writeheader()
-                    writer.writerows(dict(rule=rule["id"], **row) for row in decisions)
+                    if decisions:
+                        writer.writerows(dict(rule=rule["id"], **row) for row in decisions)
+                    gap = values["min_sampled_gap_m"]
                     rows.append({"id": rule["id"], "seed": seed, "raw": values,
-                                 "sampled_overlap": values["min_sampled_gap_m"] < 0,
+                                 "sampled_overlap": None if gap is None else gap < 0,
                                  "score": score(reference, values), "diagnostic": diag})
                     del vehicles
     return {"seed": seed, "baseline": reference, "runs": rows}
@@ -88,7 +92,8 @@ def summarize(by_seed, rules):
         result = {"id": rule["id"], "eligible_seeds": len(valid),
                   "mean_reward": None, "mean_improvement_percent": None,
                   "joint_mean_time_and_variation_improved": None,
-                  "min_gap_m": min(r["raw"]["min_sampled_gap_m"] for r in runs)}
+                  "min_gap_m": min((r["raw"]["min_sampled_gap_m"] for r in runs
+                                    if r["raw"]["min_sampled_gap_m"] is not None), default=None)}
         if len(valid) == len(runs):
             result["mean_reward"] = mean(r["score"]["reward"] for r in runs)
             result["mean_improvement_percent"] = {
@@ -116,7 +121,7 @@ def main():
                                                   "by_seed": by_seed})
     for row in summary:
         print(row["id"], "reward", row["mean_reward"], "eligible", row["eligible_seeds"],
-              "min gap", round(row["min_gap_m"], 4), "gains", row["mean_improvement_percent"])
+              "min gap", row["min_gap_m"], "gains", row["mean_improvement_percent"])
 
 
 if __name__ == "__main__":

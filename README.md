@@ -2,7 +2,7 @@
 
 Coursework Part II experiment records for an exploratory combination of single-vehicle traffic smoothing and simulation-feedback-guided rule search.
 
-**Current status:** phase 1 paired vehicle controller and phase 2 scoring are implemented. The only intervention evaluated so far is a manually designed rule. LLM candidate generation and held-out evaluation have not started.
+**Current status.** Phase 3 completed three rounds of offline LLM rule search and an equal-budget fixed-rule comparison. The best development rule reduced follower speed variation by 2.51% and low-speed vehicle-seconds by 7.16% across three paired seeds. Total travel time and the last exit were identical to the paired all-IDM references. The two finalists per method are recorded for subsequent validation. [Phase 3 results, figures and reproduction commands](experiments/stage3/README.md)
 
 ## Reproduce
 
@@ -17,14 +17,15 @@ python -m venv .venv
 .venv/Scripts/python evaluate.py
 ```
 
-Results are written to `experiments/stage1` and `experiments/stage2`. The finite cohort experiment uses an explicitly paired random stream and is not a bit-for-bit replication of the teacher's default random sequence. A failed or unfinished run is not assigned a misleading score.
+These commands reproduce the stage 1 and 2 references. The finite cohort experiment uses explicitly paired random streams that differ from the teacher's default sequence. The evaluator records completion and sampled-gap failures separately.
 
 ## Contents
 
 - `stage1_single_vehicle.py` — 60-vehicle paired simulation, replay check, one hand-written intervention and trajectory plot.
 - `evaluate.py` — completion checks, sampled minimum gap, baseline-relative metrics and exploratory reward.
 - `test_evaluate.py` — checks scoring and rejection cases.
-- `experiments/` — stage 1 artifacts, phase 2 results and the experimental plan.
+- `stage3_policy.py`, `stage3_search.py`, `stage3_report.py` — decision tables, development batch replay and shortlist/figures.
+- `experiments/` — the experiment plan, paired reference runs and development search records.
 
 ## Assessment
 

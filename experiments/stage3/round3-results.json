@@ -1,0 +1,931 @@
+{
+  "group": "round3",
+  "summary": [
+    {
+      "id": "R3A",
+      "eligible_seeds": 3,
+      "mean_reward": 0.9558964578339718,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 1.6952670498048747,
+        "low_speed_vehicle_s": 4.473163428925094,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.729169526191072
+    },
+    {
+      "id": "R3B",
+      "eligible_seeds": 3,
+      "mean_reward": 1.4697465665446672,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 2.5132742186040704,
+        "low_speed_vehicle_s": 7.15764300963446,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.552462720555013
+    },
+    {
+      "id": "R3C",
+      "eligible_seeds": 3,
+      "mean_reward": 0.811558741945398,
+      "mean_improvement_percent": {
+        "total_travel_s": -0.036085102660524546,
+        "follower_variation_per_km": -3.6890932717221343,
+        "low_speed_vehicle_s": 19.449621125659153,
+        "last_exit_s": -0.08632837773614951
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.7280984209646704
+    }
+  ],
+  "by_seed": [
+    {
+      "seed": 1,
+      "baseline": {
+        "vehicles_admitted": 60,
+        "vehicles_exited": 60,
+        "exited_by_400s": 21,
+        "all_completed": true,
+        "total_travel_s": 24297.265932339255,
+        "last_exit_s": 626.0,
+        "low_speed_vehicle_s": 12842.500000000004,
+        "follower_variation_per_km": 22.264129141746167,
+        "min_sampled_gap_m": 2.9180218624096597
+      },
+      "runs": [
+        {
+          "id": "R3A",
+          "seed": 1,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 21,
+            "all_completed": true,
+            "total_travel_s": 24297.265932339255,
+            "last_exit_s": 626.0,
+            "low_speed_vehicle_s": 12086.299999999997,
+            "follower_variation_per_km": 21.97215108254342,
+            "min_sampled_gap_m": 2.729169526191072
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.9822546112099012,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 1.3114281602655498,
+              "low_speed_vehicle_s": 5.888261631302362,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 129,
+            "strongest_brake_window": [
+              {
+                "t": 271.0,
+                "position": 4436.578548915946,
+                "ego": 2.4184709814708825,
+                "ahead": 2.3745567461994606,
+                "leader": 1.4784154283251016,
+                "gap": 4.632912229479189,
+                "zone_speed": 3.1268833613089884,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -0.8754097980632336
+              },
+              {
+                "t": 272.0,
+                "position": 4438.809378455196,
+                "ego": 2.022893084855528,
+                "ahead": 2.48466748344453,
+                "leader": 1.3323848483745062,
+                "gap": 3.8018609813507283,
+                "zone_speed": 3.0889446172709496,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -0.9972452566183154
+              },
+              {
+                "t": 273.0,
+                "position": 4440.56163724912,
+                "ego": 1.5166643008514455,
+                "ahead": 2.583264787956827,
+                "leader": 1.3926247412335875,
+                "gap": 3.412461525913386,
+                "zone_speed": 3.0101196974367475,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -0.4331654372572413
+              }
+            ],
+            "release": {
+              "t": 314.0,
+              "position": 4501.378307494241,
+              "ego": 1.5060310498546967,
+              "ahead": 2.855968283780319,
+              "leader": 1.5706753856043691,
+              "gap": 3.6377791215472826,
+              "zone_speed": 1.494296810315158,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 30.0,
+              "effective_target": 30.0,
+              "min_ego_accel_next_s": -0.16493630558749528
+            }
+          }
+        },
+        {
+          "id": "R3B",
+          "seed": 1,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 21,
+            "all_completed": true,
+            "total_travel_s": 24297.265932339255,
+            "last_exit_s": 626.0,
+            "low_speed_vehicle_s": 11963.600000000002,
+            "follower_variation_per_km": 21.709022508784674,
+            "min_sampled_gap_m": 2.552462720555013
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 1.4323517072445744,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 2.493277996311319,
+              "low_speed_vehicle_s": 6.843683083511786,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 143,
+            "strongest_brake_window": [
+              {
+                "t": 259.0,
+                "position": 4415.776384083922,
+                "ego": 4.185096488517532,
+                "ahead": 2.223512638422453,
+                "leader": 1.5595506462833133,
+                "gap": 8.000815709246126,
+                "zone_speed": 3.8131574192431703,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.34757785465726,
+                "road": 30.0,
+                "effective_target": 6.34757785465726,
+                "min_ego_accel_next_s": -1.1946824558234992
+              },
+              {
+                "t": 260.0,
+                "position": 4419.55155355893,
+                "ego": 3.3288872846068367,
+                "ahead": 2.2650959973094382,
+                "leader": 1.501930531360642,
+                "gap": 5.764680331675663,
+                "zone_speed": 3.802100627786551,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.287175143057112,
+                "road": 30.0,
+                "effective_target": 6.287175143057112,
+                "min_ego_accel_next_s": -1.2999262801281075
+              },
+              {
+                "t": 261.0,
+                "position": 4422.473695033166,
+                "ego": 2.510955200403297,
+                "ahead": 2.358776618196375,
+                "leader": 1.4273537556649205,
+                "gap": 4.333803246518073,
+                "zone_speed": 3.70165435066094,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 6.24042087946934,
+                "road": 30.0,
+                "effective_target": 6.24042087946934,
+                "min_ego_accel_next_s": -1.1105989608721867
+              }
+            ],
+            "release": {
+              "t": 314.0,
+              "position": 4501.395979935695,
+              "ego": 1.5046926942768486,
+              "ahead": 2.855968283780319,
+              "leader": 1.5706753856043691,
+              "gap": 3.6201066800931585,
+              "zone_speed": 1.4959478413151968,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 30.0,
+              "effective_target": 30.0,
+              "min_ego_accel_next_s": -0.17247027523803693
+            }
+          }
+        },
+        {
+          "id": "R3C",
+          "seed": 1,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 21,
+            "all_completed": true,
+            "total_travel_s": 24297.265932339255,
+            "last_exit_s": 626.0,
+            "low_speed_vehicle_s": 10349.000000000002,
+            "follower_variation_per_km": 23.17686068808327,
+            "min_sampled_gap_m": 2.7280984209646704
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.7117318677893862,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": -4.099560959811776,
+              "low_speed_vehicle_s": 19.41600155732919,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 147,
+            "strongest_brake_window": [
+              {
+                "t": 313.0,
+                "position": 4492.83193445882,
+                "ego": 4.362060686917255,
+                "ahead": 2.719921497292126,
+                "leader": 1.5232769906059889,
+                "gap": 10.60831269994651,
+                "zone_speed": 5.314569836213708,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -0.8020829581003008
+              },
+              {
+                "t": 314.0,
+                "position": 4496.937859453162,
+                "ego": 3.8309930759882804,
+                "ahead": 2.855968283780319,
+                "leader": 1.5706753856043691,
+                "gap": 8.078227162626717,
+                "zone_speed": 5.268020662286442,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -0.8821722892811135
+              },
+              {
+                "t": 315.0,
+                "position": 4500.528863603899,
+                "ego": 3.3273270242907946,
+                "ahead": 2.983780323741655,
+                "leader": 1.6486444658393884,
+                "gap": 6.114537204704902,
+                "zone_speed": 5.21979939639496,
+                "entry_rate": 0.2,
+                "state": "done",
+                "cap": null,
+                "road": 30.0,
+                "effective_target": 30.0,
+                "min_ego_accel_next_s": -1.1734260807766361
+              }
+            ],
+            "release": {
+              "t": 315.0,
+              "position": 4500.528863603899,
+              "ego": 3.3273270242907946,
+              "ahead": 2.983780323741655,
+              "leader": 1.6486444658393884,
+              "gap": 6.114537204704902,
+              "zone_speed": 5.21979939639496,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 30.0,
+              "effective_target": 30.0,
+              "min_ego_accel_next_s": -1.1734260807766361
+            }
+          }
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "baseline": {
+        "vehicles_admitted": 60,
+        "vehicles_exited": 60,
+        "exited_by_400s": 23,
+        "all_completed": true,
+        "total_travel_s": 23578.826847681354,
+        "last_exit_s": 611.8,
+        "low_speed_vehicle_s": 12043.800000000001,
+        "follower_variation_per_km": 22.62340008460343,
+        "min_sampled_gap_m": 2.9792458717774934
+      },
+      "runs": [
+        {
+          "id": "R3A",
+          "seed": 2,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23578.826847681354,
+            "last_exit_s": 611.8,
+            "low_speed_vehicle_s": 11678.000000000002,
+            "follower_variation_per_km": 22.1458833681702,
+            "min_sampled_gap_m": 2.757220228614642
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.9369408523028004,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 2.1107203808777064,
+              "low_speed_vehicle_s": 3.0372473803948856,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 115,
+            "strongest_brake_window": [
+              {
+                "t": 257.0,
+                "position": 4425.062145170725,
+                "ego": 3.5451528702782213,
+                "ahead": 2.247139357518148,
+                "leader": 1.5791865971369419,
+                "gap": 8.145574201632371,
+                "zone_speed": 3.1171038931191393,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -0.7389626121089954
+              },
+              {
+                "t": 258.0,
+                "position": 4428.375931737173,
+                "ego": 3.0737477271266944,
+                "ahead": 2.347168492475809,
+                "leader": 1.5151816499325443,
+                "gap": 6.355557637961283,
+                "zone_speed": 3.081431457739494,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -1.0365732470142364
+              },
+              {
+                "t": 259.0,
+                "position": 4431.273530480152,
+                "ego": 2.651288062581501,
+                "ahead": 2.4453696110739096,
+                "leader": 1.4837733937231377,
+                "gap": 4.99773713963441,
+                "zone_speed": 3.054184508983836,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 4.5,
+                "road": 30.0,
+                "effective_target": 4.5,
+                "min_ego_accel_next_s": -0.9230603343882171
+              }
+            ],
+            "release": {
+              "t": 304.0,
+              "position": 4501.270083961506,
+              "ego": 1.3397077769185874,
+              "ahead": 3.59236410063989,
+              "leader": 1.627993642177173,
+              "gap": 3.770340175592537,
+              "zone_speed": 1.547661801958557,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -0.051242981453101244
+            }
+          }
+        },
+        {
+          "id": "R3B",
+          "seed": 2,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23578.826847681354,
+            "last_exit_s": 611.8,
+            "low_speed_vehicle_s": 11153.500000000004,
+            "follower_variation_per_km": 22.089641201068115,
+            "min_sampled_gap_m": 2.7110461902566385
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 1.4470151564553524,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 2.359322124611003,
+              "low_speed_vehicle_s": 7.3921851907205145,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 128,
+            "strongest_brake_window": [
+              {
+                "t": 260.0,
+                "position": 4430.098138234704,
+                "ego": 4.023847425600421,
+                "ahead": 2.5515766564756963,
+                "leader": 1.5056379832404336,
+                "gap": 7.674515985201651,
+                "zone_speed": 4.155594487536673,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.11842978824474,
+                "road": 30.0,
+                "effective_target": 6.11842978824474,
+                "min_ego_accel_next_s": -1.2549516130634375
+              },
+              {
+                "t": 261.0,
+                "position": 4433.680566064343,
+                "ego": 3.133231020697381,
+                "ahead": 2.6517250333664126,
+                "leader": 1.3819565002775442,
+                "gap": 5.544748807760698,
+                "zone_speed": 4.098769099609774,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.061110942970515,
+                "road": 30.0,
+                "effective_target": 6.061110942970515,
+                "min_ego_accel_next_s": -1.3708039624733592
+              },
+              {
+                "t": 262.0,
+                "position": 4436.395265989223,
+                "ego": 2.4348698355749723,
+                "ahead": 2.7601244876358755,
+                "leader": 1.4064844388120576,
+                "gap": 4.228655202007758,
+                "zone_speed": 4.044769743452527,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.017675744172436,
+                "road": 30.0,
+                "effective_target": 6.017675744172436,
+                "min_ego_accel_next_s": -1.1176817187634436
+              }
+            ],
+            "release": {
+              "t": 304.0,
+              "position": 4501.280917000616,
+              "ego": 1.3363574056863463,
+              "ahead": 3.59236410063989,
+              "leader": 1.627993642177173,
+              "gap": 3.75950713648308,
+              "zone_speed": 1.5442032507706593,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -0.0518701528549359
+            }
+          }
+        },
+        {
+          "id": "R3C",
+          "seed": 2,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23580.426847681356,
+            "last_exit_s": 611.9,
+            "low_speed_vehicle_s": 9795.0,
+            "follower_variation_per_km": 23.3393606491225,
+            "min_sampled_gap_m": 2.9742158495291733
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.9127502681035853,
+            "improvements_percent": {
+              "total_travel_s": -0.006785748970201714,
+              "follower_variation_per_km": -3.1646903729838827,
+              "low_speed_vehicle_s": 18.671847755691733,
+              "last_exit_s": -0.016345210853223723
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 134,
+            "strongest_brake_window": [
+              {
+                "t": 305.0,
+                "position": 4495.76616585299,
+                "ego": 4.397380325129322,
+                "ahead": 3.8209282630211816,
+                "leader": 1.6165926954027094,
+                "gap": 10.892768572427485,
+                "zone_speed": 5.279340530255742,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -0.5727256273065429
+              },
+              {
+                "t": 306.0,
+                "position": 4499.966480167144,
+                "ego": 3.9739257407728408,
+                "ahead": 4.034106008655825,
+                "leader": 1.6204884180142929,
+                "gap": 8.302730856418748,
+                "zone_speed": 5.232083598976912,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -7.999999999999998
+              },
+              {
+                "t": 307.0,
+                "position": 4502.388186005297,
+                "ego": 1.87939934078469,
+                "ahead": 4.259580126593641,
+                "leader": 1.6315433268569,
+                "gap": 7.496294262694391,
+                "zone_speed": 5.183715279646235,
+                "entry_rate": 0.2,
+                "state": "done",
+                "cap": null,
+                "road": 2.0,
+                "effective_target": 2.0,
+                "min_ego_accel_next_s": -0.3020012588141485
+              }
+            ],
+            "release": {
+              "t": 307.0,
+              "position": 4502.388186005297,
+              "ego": 1.87939934078469,
+              "ahead": 4.259580126593641,
+              "leader": 1.6315433268569,
+              "gap": 7.496294262694391,
+              "zone_speed": 5.183715279646235,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -0.3020012588141485
+            }
+          }
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "baseline": {
+        "vehicles_admitted": 60,
+        "vehicles_exited": 60,
+        "exited_by_400s": 23,
+        "all_completed": true,
+        "total_travel_s": 23849.517269793767,
+        "last_exit_s": 618.2,
+        "low_speed_vehicle_s": 12336.499999999998,
+        "follower_variation_per_km": 22.363756855522425,
+        "min_sampled_gap_m": 2.821616242122218
+      },
+      "runs": [
+        {
+          "id": "R3A",
+          "seed": 3,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23849.517269793767,
+            "last_exit_s": 618.2,
+            "low_speed_vehicle_s": 11782.099999999997,
+            "follower_variation_per_km": 21.99170163128806,
+            "min_sampled_gap_m": 2.781092074999833
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.9484939099892138,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 1.6636526082713683,
+              "low_speed_vehicle_s": 4.493981275078033,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 119,
+            "strongest_brake_window": [
+              {
+                "t": 186.0,
+                "position": 3560.297807382622,
+                "ego": 26.305879478297147,
+                "ahead": 26.83839213319973,
+                "leader": 26.33328384269869,
+                "gap": 44.30842098820085,
+                "zone_speed": 10.016705644743427,
+                "entry_rate": 0.2,
+                "state": "waiting",
+                "cap": null,
+                "road": 30.0,
+                "effective_target": 30.0,
+                "min_ego_accel_next_s": -0.16031096193575678
+              },
+              {
+                "t": 187.0,
+                "position": 3586.614923162107,
+                "ego": 26.32364550827885,
+                "ahead": 26.69456476210978,
+                "leader": 26.44039601008215,
+                "gap": 44.38242655054228,
+                "zone_speed": 9.55130161120411,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 25.77364550827885,
+                "road": 30.0,
+                "effective_target": 25.77364550827885,
+                "min_ego_accel_next_s": -0.9293683561877586
+              },
+              {
+                "t": 188.0,
+                "position": 3612.622081637936,
+                "ego": 25.7669761161436,
+                "ahead": 25.733616139786385,
+                "leader": 26.499004816654647,
+                "gap": 44.85449761487598,
+                "zone_speed": 9.532137309171105,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 25.22364550827885,
+                "road": 30.0,
+                "effective_target": 25.22364550827885,
+                "min_ego_accel_next_s": -0.6248528044472934
+              }
+            ],
+            "release": {
+              "t": 306.0,
+              "position": 4500.14118236265,
+              "ego": 1.5755172433396811,
+              "ahead": 3.490421900557785,
+              "leader": 1.5511149039099692,
+              "gap": 3.595741841447307,
+              "zone_speed": 1.487005327370517,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -0.7813758962443496
+            }
+          }
+        },
+        {
+          "id": "R3B",
+          "seed": 3,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23849.517269793767,
+            "last_exit_s": 618.2,
+            "low_speed_vehicle_s": 11443.7,
+            "follower_variation_per_km": 21.762792941652844,
+            "min_sampled_gap_m": 3.1288184902487046
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 1.5298728359340745,
+            "improvements_percent": {
+              "total_travel_s": 0.0,
+              "follower_variation_per_km": 2.687222534889889,
+              "low_speed_vehicle_s": 7.237060754671078,
+              "last_exit_s": 0.0
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 133,
+            "strongest_brake_window": [
+              {
+                "t": 259.0,
+                "position": 4423.20671869853,
+                "ego": 4.405965950631707,
+                "ahead": 2.345794504591001,
+                "leader": 1.7218938937010078,
+                "gap": 9.225032318781814,
+                "zone_speed": 4.1243543580104225,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.228692500823527,
+                "road": 30.0,
+                "effective_target": 6.228692500823527,
+                "min_ego_accel_next_s": -1.094517991193209
+              },
+              {
+                "t": 260.0,
+                "position": 4427.324602226541,
+                "ego": 3.791070047236339,
+                "ahead": 2.395772954977075,
+                "leader": 1.6390757904047768,
+                "gap": 6.7837061357213315,
+                "zone_speed": 4.06338059940772,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 6.162806364375342,
+                "road": 30.0,
+                "effective_target": 6.162806364375342,
+                "min_ego_accel_next_s": -1.52850531136012
+              },
+              {
+                "t": 261.0,
+                "position": 4430.67028510018,
+                "ego": 2.9870358184331103,
+                "ahead": 2.488188097006663,
+                "leader": 1.6042484919736424,
+                "gap": 5.078846805201465,
+                "zone_speed": 4.031008139923932,
+                "entry_rate": 0.2,
+                "state": "active",
+                "cap": 6.10927543839712,
+                "road": 30.0,
+                "effective_target": 6.10927543839712,
+                "min_ego_accel_next_s": -1.4076293739254853
+              }
+            ],
+            "release": {
+              "t": 306.0,
+              "position": 4500.154895636826,
+              "ego": 1.5780007808625756,
+              "ahead": 3.490421900557785,
+              "leader": 1.5511149039099692,
+              "gap": 3.5820285672716636,
+              "zone_speed": 1.4733649283366304,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -0.8016999535363389
+            }
+          }
+        },
+        {
+          "id": "R3C",
+          "seed": 3,
+          "raw": {
+            "vehicles_admitted": 60,
+            "vehicles_exited": 60,
+            "exited_by_400s": 23,
+            "all_completed": true,
+            "total_travel_s": 23873.717269793768,
+            "last_exit_s": 619.7,
+            "low_speed_vehicle_s": 9837.0,
+            "follower_variation_per_km": 23.214256898466083,
+            "min_sampled_gap_m": 2.788876028591403
+          },
+          "sampled_overlap": false,
+          "score": {
+            "status": "eligible",
+            "reasons": [],
+            "reward": 0.8101940899432224,
+            "improvements_percent": {
+              "total_travel_s": -0.10146955901137193,
+              "follower_variation_per_km": -3.8030284823707445,
+              "low_speed_vehicle_s": 20.26101406395654,
+              "last_exit_s": -0.24263992235522483
+            },
+            "joint_time_and_variation_improved": false
+          },
+          "diagnostic": {
+            "active_s_samples": 145,
+            "strongest_brake_window": [
+              {
+                "t": 311.0,
+                "position": 4490.659253415045,
+                "ego": 5.092783908021334,
+                "ahead": 4.786620896703047,
+                "leader": 1.6101488563908826,
+                "gap": 20.96539149381624,
+                "zone_speed": 5.389576987631515,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -0.18797941913923033
+              },
+              {
+                "t": 312.0,
+                "position": 4495.678507486261,
+                "ego": 4.948411393056117,
+                "ahead": 5.047545733556616,
+                "leader": 1.6328267792852624,
+                "gap": 17.563581430660633,
+                "zone_speed": 5.376145219454878,
+                "entry_rate": 0.0,
+                "state": "active",
+                "cap": 5.5,
+                "road": 30.0,
+                "effective_target": 5.5,
+                "min_ego_accel_next_s": -7.999999999999998
+              },
+              {
+                "t": 313.0,
+                "position": 4500.51482534834,
+                "ego": 4.014217848422191,
+                "ahead": 4.278977503108834,
+                "leader": 1.6308457499857547,
+                "gap": 14.35671779326185,
+                "zone_speed": 5.370933748816229,
+                "entry_rate": 0.2,
+                "state": "done",
+                "cap": null,
+                "road": 2.0,
+                "effective_target": 2.0,
+                "min_ego_accel_next_s": -7.999999999999998
+              }
+            ],
+            "release": {
+              "t": 313.0,
+              "position": 4500.51482534834,
+              "ego": 4.014217848422191,
+              "ahead": 4.278977503108834,
+              "leader": 1.6308457499857547,
+              "gap": 14.35671779326185,
+              "zone_speed": 5.370933748816229,
+              "entry_rate": 0.2,
+              "state": "done",
+              "cap": null,
+              "road": 2.0,
+              "effective_target": 2.0,
+              "min_ego_accel_next_s": -7.999999999999998
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "split": "development only",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "seed1_individual_exit_times_changed_for_best_llm": 0,
+  "finalists_for_validation": {
+    "llm": [
+      {
+        "rule": {
+          "id": "R3B",
+          "start": [
+            [
+              "position",
+              ">",
+              2500
+            ],
+            [
+              "zone_speed",
+              "<",
+              17
+            ]
+          ],
+          "duration": 160,
+          "end_m": 4500,
+          "target": [
+            "position",
+            -0.016,
+            77,
+            6,
+            23
+          ],
+          "drop": 0.55,
+          "release": []
+        },
+        "sha256_canonical_json": "174eeb1420e27c70ea11ed48d9374a31798f1c1a3a36d69610aa8a3db238f7bd",
+        "development_mean_reward": 1.4697465665446672
+      },
+      {
+        "rule": {
+          "id": "R2C",
+          "start": [
+            [
+              "position",
+              ">",
+              2500
+            ],
+            [
+              "zone_speed",
+              "<",
+              10
+            ]
+          ],
+          "duration": 160,
+          "end_m": 4500,
+          "target": [
+            "position",
+            -0.016,
+            77,
+            6,
+            23
+          ],
+          "drop": 0.55,
+          "release": []
+        },
+        "sha256_canonical_json": "cfb8e53da84b1fd8ba37168f987c15406a7308ad68c7877876dd5b2a16d55061",
+        "development_mean_reward": 1.163310958280247
+      }
+    ],
+    "fixed_grid": [
+      {
+        "rule": {
+          "id": "H20_100",
+          "start": [
+            [
+              "ahead",
+              "<",
+              20
+            ]
+          ],
+          "duration": 100,
+          "end_m": 4500,
+          "target": [
+            "ego",
+            0,
+            20,
+            20,
+            20
+          ],
+          "drop": 30,
+          "release": []
+        },
+        "sha256_canonical_json": "d768e69f546c79b497b82c6a85dec1448639d26c5740ebc311d5c9b15bc3c0a7",
+        "development_mean_reward": 0.5618878929374422
+      },
+      {
+        "rule": {
+          "id": "H20_65",
+          "start": [
+            [
+              "ahead",
+              "<",
+              20
+            ]
+          ],
+          "duration": 65,
+          "end_m": 4500,
+          "target": [
+            "ego",
+            0,
+            20,
+            20,
+            20
+          ],
+          "drop": 30,
+          "release": []
+        },
+        "sha256_canonical_json": "708fc166b57ab7fc8990cbc690178b607d1a708353d5639438e951305667931e",
+        "development_mean_reward": 0.5618855782088362
+      }
+    ]
+  }
+}
