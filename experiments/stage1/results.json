@@ -1,0 +1,128 @@
+{
+  "1": {
+    "baseline": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 21,
+      "all_completed": true,
+      "total_travel_s": 24297.265932339255,
+      "last_exit_s": 626.0,
+      "low_speed_vehicle_s": 12842.500000000004,
+      "follower_variation_per_km": 22.264129141746167,
+      "min_sampled_gap_m": 2.9180218624096597
+    },
+    "intervention": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 21,
+      "all_completed": true,
+      "total_travel_s": 24297.265932339255,
+      "last_exit_s": 626.0,
+      "low_speed_vehicle_s": 12766.099999999995,
+      "follower_variation_per_km": 21.882001314790642,
+      "min_sampled_gap_m": 2.6119252440912533
+    },
+    "events": [
+      {
+        "time_s": 192.0,
+        "event": "start",
+        "position_m": 3704.749762248091,
+        "observed_ahead_speed_mps": 17.08251613449541,
+        "target_cap_mps": 20.0
+      },
+      {
+        "time_s": 222.0,
+        "event": "release",
+        "position_m": 4307.906463950882,
+        "observed_ahead_speed_mps": 1.5920583542936584,
+        "target_cap_mps": null
+      }
+    ],
+    "noop_trajectory_identical": true,
+    "vehicles_with_changed_exit_time": 0
+  },
+  "2": {
+    "baseline": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 23,
+      "all_completed": true,
+      "total_travel_s": 23578.826847681354,
+      "last_exit_s": 611.8,
+      "low_speed_vehicle_s": 12043.800000000001,
+      "follower_variation_per_km": 22.62340008460343,
+      "min_sampled_gap_m": 2.9792458717774934
+    },
+    "intervention": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 23,
+      "all_completed": true,
+      "total_travel_s": 23578.826847681354,
+      "last_exit_s": 611.8,
+      "low_speed_vehicle_s": 11965.899999999998,
+      "follower_variation_per_km": 22.219556225094248,
+      "min_sampled_gap_m": 2.6511914957318368
+    },
+    "events": [
+      {
+        "time_s": 192.0,
+        "event": "start",
+        "position_m": 3714.0191844768756,
+        "observed_ahead_speed_mps": 17.122978475788653,
+        "target_cap_mps": 20.0
+      },
+      {
+        "time_s": 222.0,
+        "event": "release",
+        "position_m": 4316.682027254562,
+        "observed_ahead_speed_mps": 1.683863147065575,
+        "target_cap_mps": null
+      }
+    ],
+    "noop_trajectory_identical": true,
+    "vehicles_with_changed_exit_time": 0
+  },
+  "3": {
+    "baseline": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 23,
+      "all_completed": true,
+      "total_travel_s": 23849.517269793767,
+      "last_exit_s": 618.2,
+      "low_speed_vehicle_s": 12336.499999999998,
+      "follower_variation_per_km": 22.363756855522425,
+      "min_sampled_gap_m": 2.821616242122218
+    },
+    "intervention": {
+      "vehicles_admitted": 60,
+      "vehicles_exited": 60,
+      "exited_by_400s": 23,
+      "all_completed": true,
+      "total_travel_s": 23849.517269793767,
+      "last_exit_s": 618.2,
+      "low_speed_vehicle_s": 12254.899999999998,
+      "follower_variation_per_km": 22.042949768638074,
+      "min_sampled_gap_m": 2.5230745520184428
+    },
+    "events": [
+      {
+        "time_s": 191.0,
+        "event": "start",
+        "position_m": 3692.138178838196,
+        "observed_ahead_speed_mps": 19.231922498773287,
+        "target_cap_mps": 20.0
+      },
+      {
+        "time_s": 221.0,
+        "event": "release",
+        "position_m": 4298.684486273506,
+        "observed_ahead_speed_mps": 1.7061042644422975,
+        "target_cap_mps": null
+      }
+    ],
+    "noop_trajectory_identical": true,
+    "vehicles_with_changed_exit_time": 0
+  }
+}

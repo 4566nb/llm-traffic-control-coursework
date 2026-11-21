@@ -1,0 +1,14 @@
+step: 1000, time: 100
+step: 2000, time: 200
+step: 3000, time: 300
+step: 4000, time: 400
+step: 5000, time: 500
+step: 6000, time: 600
+step: 7000, time: 700
+step: 8000, time: 800
+step: 9000, time: 900
+
+Vehicle number: 589
+Average admitted inflow: 2120 veh/h
+
+Time-space diagram saved to: outputs\part2-baseline\idm-experiment-1.png
