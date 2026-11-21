@@ -1,0 +1,68 @@
+{
+  "R3B": {
+    "paired_savings_and_counts": {
+      "total_travel_s": {
+        "mean_saving": 0.0,
+        "improved": 0,
+        "tied": 6,
+        "worsened": 0,
+        "missing": 0
+      },
+      "follower_variation_per_km": {
+        "mean_saving": 0.5977211844498012,
+        "improved": 6,
+        "tied": 0,
+        "worsened": 0,
+        "missing": 0
+      },
+      "low_speed_vehicle_s": {
+        "mean_saving": 882.5333333333332,
+        "improved": 6,
+        "tied": 0,
+        "worsened": 0,
+        "missing": 0
+      },
+      "last_exit_s": {
+        "mean_saving": 0.0,
+        "improved": 0,
+        "tied": 6,
+        "worsened": 0,
+        "missing": 0
+      }
+    },
+    "changed_exit_timestamps": 0
+  },
+  "H20_100": {
+    "paired_savings_and_counts": {
+      "total_travel_s": {
+        "mean_saving": 0.0,
+        "improved": 0,
+        "tied": 6,
+        "worsened": 0,
+        "missing": 0
+      },
+      "follower_variation_per_km": {
+        "mean_saving": 0.4148044989810007,
+        "improved": 6,
+        "tied": 0,
+        "worsened": 0,
+        "missing": 0
+      },
+      "low_speed_vehicle_s": {
+        "mean_saving": 80.51666666666763,
+        "improved": 6,
+        "tied": 0,
+        "worsened": 0,
+        "missing": 0
+      },
+      "last_exit_s": {
+        "mean_saving": 0.0,
+        "improved": 0,
+        "tied": 6,
+        "worsened": 0,
+        "missing": 0
+      }
+    },
+    "changed_exit_timestamps": 0
+  }
+}

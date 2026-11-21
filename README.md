@@ -2,7 +2,7 @@
 
 Coursework Part II experiment records for an exploratory combination of single-vehicle traffic smoothing and simulation-feedback-guided rule search.
 
-**Current status.** Phase 3 completed three rounds of offline LLM rule search and an equal-budget fixed-rule comparison. The best development rule reduced follower speed variation by 2.51% and low-speed vehicle-seconds by 7.16% across three paired seeds. Total travel time and the last exit were identical to the paired all-IDM references. The two finalists per method are recorded for subsequent validation. [Phase 3 results, figures and reproduction commands](experiments/stage3/README.md)
+**Current status.** Phase 4 selected R3B and H20_100 on validation and froze both rules before opening six held-out experiment 4 traffic sequences. R3B reduced follower speed variation by 2.67% and whole-cohort low-speed time by 7.18% on average. All 360 individual exit timestamps matched the paired all-IDM baseline. [Frozen test results and evidence](experiments/stage4/README.md) · [Development search](experiments/stage3/README.md)
 
 ## Reproduce
 
@@ -25,11 +25,12 @@ These commands reproduce the stage 1 and 2 references. The finite cohort experim
 - `evaluate.py` — completion checks, sampled minimum gap, baseline-relative metrics and exploratory reward.
 - `test_evaluate.py` — checks scoring and rejection cases.
 - `stage3_policy.py`, `stage3_search.py`, `stage3_report.py` — decision tables, development batch replay and shortlist/figures.
-- `experiments/` — the experiment plan, paired reference runs and development search records.
+- `stage4_freeze.py` and `stage4_report.py` — validation selection, committed-rule testing and archive-based analysis.
+- `experiments/` — the experiment plan, paired reference runs, development search, freeze and held-out results.
 
 ## Assessment
 
-Total cohort travel time includes waiting from scheduled arrival. The speed variation measurement concerns followers 31–40; low-speed exposure is counted below 5 m/s. Baseline and intervention use common demand, bottleneck assignments, and per-vehicle per-step noise. Safety metrics observe 0.1 s samples and do not prove continuous-time safety. Rewards and weights are provisional and scores must be read alongside the raw metrics. Development seeds 1–3 have been used; they are not held-out results.
+Total cohort travel time includes waiting from scheduled arrival. Speed variation covers followers 31–40, and low-speed exposure counts vehicle-seconds below 5 m/s. Baseline and intervention use common demand, bottleneck assignments and vehicle-by-step noise. Net gaps are checked at 0.1 s samples. The test uses the reward weights fixed at selection. Seeds 1–3 guided design, 11–12 selected finalists, and 101–106 produced the frozen test comparison.
 
 ## Attribution
 

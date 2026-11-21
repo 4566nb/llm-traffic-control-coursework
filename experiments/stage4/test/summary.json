@@ -1,0 +1,40 @@
+{
+  "split": "test",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106
+  ],
+  "binding": "10b7327ca906f1d04fb28bc5b6bc70cb1fb1bf7750aeb8dbd22408ad9677afd0",
+  "summary": [
+    {
+      "id": "R3B",
+      "eligible_seeds": 6,
+      "mean_reward": 1.51911127774458,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 2.671520286968193,
+        "low_speed_vehicle_s": 7.176551916541223,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.5719510458884542
+    },
+    {
+      "id": "H20_100",
+      "eligible_seeds": 6,
+      "mean_reward": 0.6231300706791572,
+      "mean_improvement_percent": {
+        "total_travel_s": 0.0,
+        "follower_variation_per_km": 1.8589640888812489,
+        "low_speed_vehicle_s": 0.6544084401478254,
+        "last_exit_s": 0.0
+      },
+      "joint_mean_time_and_variation_improved": false,
+      "min_gap_m": 2.489973094816378
+    }
+  ]
+}
