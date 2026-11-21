@@ -1,0 +1,5 @@
+[
+  {"id":"R1A","start":[["ahead","<",20]],"duration":75,"end_m":4500,"target":["ego",0,14,14,14],"drop":0.8,"release":[]},
+  {"id":"R1B","start":[["ahead","<",21]],"duration":100,"end_m":4500,"target":["ahead",0.75,4,8,22],"drop":1,"release":[]},
+  {"id":"R1C","start":[["position",">",2500],["zone_speed","<",10]],"duration":100,"end_m":4400,"target":["zone_speed",0.5,10,10,20],"drop":0.6,"release":[["zone_speed",">",18],["leader",">",20]]}
+]

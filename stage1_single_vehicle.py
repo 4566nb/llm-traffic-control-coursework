@@ -54,7 +54,11 @@ def scenario(seed):
     return arrivals, flags, noise
 
 
-def run(seed, arm):
+def run(seed, arm, policy=None):
+    if arm not in {"baseline", "noop", "intervention", "candidate"} or (
+        (arm == "candidate") != (policy is not None)
+    ):
+        raise ValueError("A stage 3 candidate needs exactly one fresh policy instance")
     arrivals, flags, noise = scenario(seed)
     config = Config(seed=seed, experiment=4, time_max=HORIZON)
     vehicles = []
@@ -80,6 +84,9 @@ def run(seed, arm):
 
             for v in active:
                 v.check_road(t)
+
+            if policy is not None and step % 10 == 0:
+                policy.sample(t, vehicles, active, decisions)
 
             if arm == "intervention" and step % 10 == 0:
                 controlled = next((v for v in active if v.id == CONTROLLED), None)
